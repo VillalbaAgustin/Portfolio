@@ -8,17 +8,17 @@
    box-sizing: border-box;
 }
 
-body {
+html, body {
    font-family: "Poppins", sans-serif;
+   background-color: #0a192f;
+   /* overflow-x: hidden; */
+   /* max-width: 100%; */
 }
 
 a {
    text-decoration: none;
 }
 
-/* a:hover{
-  color: #001935;
-} */
 
 li {
    list-style: none;
@@ -41,7 +41,9 @@ li {
 */
 
 .nav__wrapper {
-   background: #001935;
+   background: #0a192f;
+   backdrop-filter: blur(10px);
+   background: hsla(212, 55%, 15%, 0.178);
 }
 
 .nav {
@@ -61,10 +63,10 @@ li {
 }
 
 .nav__item{
+   display: inline-block;
    list-style: none;
    position: relative;
-   display: inline-block;
-   width: 100%;
+   /* width: 100%; */
 }
 
 .nav__item::before{
@@ -75,7 +77,7 @@ li {
    bottom: 0;
    width: 100%;
    height: 2px;
-   background: #04f8fc;
+   background: #04fce3;
    border: 4px;
    scale: .01;
    transform-origin: left;
@@ -87,7 +89,7 @@ li {
 }
 
 .nav__link {
-   color: #ddd;
+   color: #b9faf2;
    justify-content: center;
    padding: 10px;
    transition: color 1s ease;
@@ -95,7 +97,12 @@ li {
 }
 
 .nav__link:hover {
-   color: #04f8fc;
+   color: #04fce3;
+}
+
+.nav__number{
+   font-size: 16px;
+   color: #04fce3;
 }
 
 .container__toggle {
@@ -112,12 +119,16 @@ li {
 .toggler__icon div {
    width: 25px;
    height: 2px;
-   background: #ddd;
+   background: #04fce3;
    margin: 5px 0px;
    transition: 0.3s ease;
 }
 
 @media screen and (max-width: 600px) {
+   .nav__wrapper{
+      background-color: transparent;
+      
+   }
    .toggler__icon {
       display: block;
    }
@@ -145,7 +156,7 @@ li {
       transition: color 1s, font-size 1s;
    }
    .nav__link:hover {
-      color: #04f8fc;
+      color: #04fce3;
       font-size: 26px;
    }
 }
@@ -165,10 +176,10 @@ li {
    transform: translate(-5px, -7px) rotate(45deg);
 }
 
-/* Background Image */
+/* Background Image
 
 .hero {
    height: 90vh;
    background: url(./img/mountain.jpg) no-repeat center center fixed;
    background-size: cover;
-}
+} */
