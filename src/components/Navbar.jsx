@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import './Navbar.css';
 import { getTopNav } from "../data/navbar";
 
 export const Navbar = () => {
@@ -22,7 +23,7 @@ export const Navbar = () => {
 
    return (
       <header className="nav__wrapper">
-         <div className="container">
+         <div className="nav__container">
             <nav className="nav">
                {/* <a href="/#Profile" className="nav__brand">
                   <span>Villaba Agustín</span>
@@ -30,7 +31,7 @@ export const Navbar = () => {
                <ul className={collapse}>
                   {navItems.map((item) => (
                      <li key={item.id} className="nav__item">
-                        <a href={item.href} className="nav__link">
+                        <a href={item.href} className="nav__link" onClick={onToggle}>
                            {/* {`${item.id}. ${item.label}`} */}
                            <span className="nav__number">{item.id}. </span>
                            {item.label}
