@@ -25,9 +25,6 @@ export const Navbar = () => {
       <header className="nav__wrapper">
          <div className="nav__container">
             <nav className="nav">
-               {/* <a href="/#Profile" className="nav__brand">
-                  <span>Villaba Agustín</span>
-               </a> */}
                <ul className={collapse}>
                   {navItems.map((item) => (
                      <li key={item.id} className="nav__item">

@@ -12,9 +12,8 @@
 }
 
 .nav__wrapper {
-   backdrop-filter: blur(10px);
-   background: #2c536420;
-   margin-bottom: 50px;
+   background: rgba(19,38,47,255);
+   /* background: #2c536420; */
    /* background: hsla(212, 55%, 15%, 0.178); */
 }
 
@@ -101,6 +100,7 @@
       width: 100%;
       background: transparent;
       backdrop-filter: initial;
+      z-index: 1;
    }
    .toggler__icon {
       display: block;

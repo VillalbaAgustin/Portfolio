@@ -1,0 +1,58 @@
+:root {
+   --animate-duration: 800ms;
+   --animate-delay: 3s;
+}
+
+
+.profile{
+   /* display: flex; */
+   align-items: center;
+}
+
+
+/* .profile__container{
+   display: flex;
+   align-items: center;
+}
+
+.profile__container img{
+   display: flex;
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+} */
+
+.profile__container{
+   display: block;
+   align-items: center;
+}
+
+.profile__container img{
+   display: flex;
+   margin: auto;
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+}
+
+.profile__container p{
+   margin: 10px 10px 0px 10px;
+   letter-spacing: 2px;
+   word-spacing: 1px;
+   text-align: justify;
+}
+
+@media screen and (max-width: 800px){
+   .profile__container{
+      display: block;
+   }
+   .profile__container img{
+      margin: auto;
+   }
+   .profile__container p{
+      text-align: justify;
+      letter-spacing: normal;
+      word-spacing: normal;
+      margin: 8px;
+   }
+}
