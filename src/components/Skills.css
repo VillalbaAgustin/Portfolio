@@ -1,0 +1,22 @@
+.logos__container{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.logo{
+   display: flex;
+   height: 100px;
+   width: 100px;
+   background: #b9faf217;
+   border-radius: 8px;
+   margin: 5px;
+   justify-content: center;
+   align-items: center;
+}
+
+.logo img{
+   height: 90px;
+   width: 90px;
+   object-fit: scale-down;
+}

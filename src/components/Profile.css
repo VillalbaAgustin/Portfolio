@@ -36,7 +36,7 @@
 }
 
 .profile__container p{
-   margin: 10px 10px 0px 10px;
+   margin: 15px 10px 0px 10px;
    letter-spacing: 2px;
    word-spacing: 1px;
    text-align: justify;
@@ -53,6 +53,5 @@
       text-align: justify;
       letter-spacing: normal;
       word-spacing: normal;
-      margin: 8px;
    }
 }

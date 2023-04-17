@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "animate.css";
 
 import "./Profile.css";
@@ -14,6 +14,8 @@ export const Profile = () => {
       // console.log(window.scrollY);
    };
    // console.log(window.scrollY);
+
+   
 
    return (
       <div className= {animationTop}>

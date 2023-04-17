@@ -3,7 +3,7 @@ import React from "react";
 export const Projects = () => {
    return (
       <div id="Projects" className="card__container">
-         <div className="textContainer">
+         <div className="">
             <h2>
                <b>03.</b> Projects
             </h2>

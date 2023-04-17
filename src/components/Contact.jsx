@@ -3,7 +3,7 @@ import React from "react";
 export const Contact = () => {
    return (
       <div id="Contact" className="card__container">
-         <div className="textContainer">
+         <div className="">
             <h2>
                <b>04.</b> Get in touch
             </h2>
