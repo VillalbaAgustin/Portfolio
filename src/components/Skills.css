@@ -1,11 +1,12 @@
-.logos__container{
+.logos__container {
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
 }
 
-.logo{
+.logo {
    display: flex;
+   position: relative;
    height: 100px;
    width: 100px;
    background: #b9faf217;
@@ -15,8 +16,37 @@
    align-items: center;
 }
 
-.logo img{
+.logo img {
    height: 90px;
    width: 90px;
    object-fit: scale-down;
+}
+
+.overlay {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: #04fce3db;
+   overflow: hidden;
+   width: 100%;
+   height: 0;
+   border-radius: 8px;
+   transition: 0.5s ease;
+}
+
+.logo:hover .overlay {
+   height: 100%;
+}
+
+.link {
+   color: rgb(0, 0, 0);
+   font-size: 18px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+   text-align: center;
 }
