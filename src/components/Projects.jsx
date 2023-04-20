@@ -1,18 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
+import "./Projects.css";
+
+const slides = [
+   {
+      url: "./projects/CalendarAppLogin.JPG",
+      title: "CalendarApp",
+      description: "Hola Mundo",
+   },
+   {
+      url: "./projects/GifApp.JPG",
+      title: "GifApp",
+      description: "Hola Mundo",
+   },
+   {
+      url: "./projects/JournalApp.JPG",
+      title: "JournalApp",
+      description: "Hola Mundo",
+   },
+   {
+      url: "./projects/MovieApp.JPG",
+      title: "MovieApp",
+      description: "Hola Mundo",
+   },
+];
 
 export const Projects = () => {
+   const [currentIndex, setCurrentIndex] = useState(3);
+
    return (
-      <div id="Projects" className="card__container">
-         <div className="">
+      <div id="Projects" className="card__container ">
+         <div className="projects__container">
             <h2>
                <b>03.</b> Projects
             </h2>
-            <p>
-               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
-               dolorem, dolor labore alias ab, vel quia vitae distinctio commodi
-               in, perferendis assumenda laudantium voluptatibus aperiam iure
-               est atque ratione placeat.
-            </p>
+            <div className="slider__container">
+               <div className="arrow">
+                  <i className="bi bi-caret-left-fill"></i>
+               </div>
+               <div className="img">
+                  <img
+                     src={slides[currentIndex].url}
+                     alt={slides[currentIndex].title}
+                  />
+               </div>
+               <div className="arrow">
+                  <i className="bi bi-caret-right-fill"></i>
+               </div>
+            </div>
          </div>
       </div>
    );
