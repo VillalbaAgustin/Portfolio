@@ -29,5 +29,6 @@
    display: flex;
    color: #efefefc8;
    font-size: 3rem;
+   cursor: pointer;
 }
 

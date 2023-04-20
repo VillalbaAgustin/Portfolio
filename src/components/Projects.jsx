@@ -27,6 +27,20 @@ const slides = [
 export const Projects = () => {
    const [currentIndex, setCurrentIndex] = useState(3);
 
+   
+   const goToPrevious = () =>{
+      const isFirstSlide = currentIndex === 0 ;
+      const newIndex = isFirstSlide ? slides.length - 1 : currentIndex -1;
+      setCurrentIndex(newIndex);
+   }
+
+   const goToNext = () =>{
+      const isLastSlide = currentIndex === slides.length -1;
+      const newIndex = isLastSlide ? 0 : currentIndex +1;
+
+      setCurrentIndex(newIndex);
+   }
+
    return (
       <div id="Projects" className="card__container ">
          <div className="projects__container">
@@ -35,7 +49,7 @@ export const Projects = () => {
             </h2>
             <div className="slider__container">
                <div className="arrow">
-                  <i className="bi bi-caret-left-fill"></i>
+                  <i className="bi bi-caret-left-fill" onClick={goToPrevious}></i>
                </div>
                <div className="img">
                   <img
@@ -44,7 +58,7 @@ export const Projects = () => {
                   />
                </div>
                <div className="arrow">
-                  <i className="bi bi-caret-right-fill"></i>
+                  <i className="bi bi-caret-right-fill" onClick={goToNext}></i>
                </div>
             </div>
          </div>
