@@ -12,9 +12,10 @@
 }
 
 .nav__wrapper {
+   /* position: fixed; */
    background: rgba(19,38,47,255);
-   /* background: #2c536420; */
-   /* background: hsla(212, 55%, 15%, 0.178); */
+   /* width: 100%; */
+   /* z-index: 1; */
 }
 
 .nav {
@@ -64,6 +65,7 @@
    padding: 10px;
    transition: color 1s ease;
    font-size: 18px;
+   font-weight: 525;
 }
 
 .nav__link:hover {

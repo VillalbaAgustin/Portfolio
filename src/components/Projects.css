@@ -2,7 +2,6 @@
 
 .projects__container{
    display: block;
-   
 }
 
 .slider__container{
@@ -25,10 +24,43 @@
    justify-content: center;
 }
 
-.bi{
+.bi-caret-right-fill {
    display: flex;
    color: #efefefc8;
    font-size: 3rem;
    cursor: pointer;
 }
+
+.bi-caret-left-fill{
+   display: flex;
+   color: #efefefc8;
+   font-size: 3rem;
+   cursor: pointer;
+}
+
+.dot__container{
+   display: flex;
+   justify-content: center;
+   margin: auto;
+   margin-top: 10px;
+}
+
+.dot {
+   display: flex;
+   color: #efefefb8;
+   cursor: pointer;
+}
+
+.active__dot{
+   display: flex;
+   color: #ffffff;
+   font-size: 40px;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.bi-dot{
+   font-size: 30px;
+}
+
 
