@@ -47,7 +47,7 @@ export const Projects = () => {
       <div id="Projects" className="card__container ">
          <div className="projects__container">
             <h2>
-               <b>03.</b> Projects
+               <b>3.</b> Projects
             </h2>
             <div className="slider__container">
                <div className="arrow">

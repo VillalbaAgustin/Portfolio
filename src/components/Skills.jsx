@@ -6,7 +6,7 @@ export const Skills = () => {
       <div id="Skills" className="card__container">
          <div className="skill__container">
             <h2>
-               <b>02.</b> Skills
+               <b>2.</b> Skills
             </h2>
             <div className="logos__container">
                <div className="logo">

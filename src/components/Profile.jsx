@@ -21,7 +21,7 @@ export const Profile = () => {
       <div className= {animationTop}>
          <div id="Profile" className="profile">
             <h2>
-               <b> 01.</b> Profile
+               <b> 1.</b> Profile
             </h2>
             <div className="profile__container">
                <img src="./assets/profile2.jpg" alt="imgProfile" />

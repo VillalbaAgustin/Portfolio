@@ -5,7 +5,7 @@ export const Contact = () => {
       <div id="Contact" className="card__container">
          <div className="">
             <h2>
-               <b>04.</b> Get in touch
+               <b>4.</b> Get in touch
             </h2>
             <p>
                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
