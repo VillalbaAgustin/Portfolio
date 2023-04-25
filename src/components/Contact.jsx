@@ -2,7 +2,9 @@ import React from "react";
 
 export const Contact = () => {
    return (
-      <div id="Contact" className="card__container">
+      <>
+      <div id="Contact" className="href"/>
+      <div id="" className="card__container">
          <div className="">
             <h2>
                <b>4.</b> Get in touch
@@ -69,5 +71,6 @@ export const Contact = () => {
             </p>
          </div>
       </div>
+      </>
    );
 };

@@ -12,10 +12,11 @@
 }
 
 .nav__wrapper {
-   /* position: fixed; */
+   position: fixed;
    background: rgba(19,38,47,255);
-   /* width: 100%; */
-   /* z-index: 1; */
+   width: 100%;
+   top: 0;
+   z-index: 1;
 }
 
 .nav {

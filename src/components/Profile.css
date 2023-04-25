@@ -29,14 +29,14 @@
 
 .profile__container img{
    display: flex;
-   margin: auto;
+   margin: 40px auto;
    width: 150px;
    height: 150px;
    border-radius: 50%;
 }
 
 .profile__container p{
-   margin: 15px 10px 0px 10px;
+   margin: 0px 10px;
    letter-spacing: 2px;
    word-spacing: 1px;
    text-align: justify;
@@ -47,7 +47,7 @@
       display: block;
    }
    .profile__container img{
-      margin: auto;
+      margin: 20px auto;
    }
    .profile__container p{
       text-align: justify;

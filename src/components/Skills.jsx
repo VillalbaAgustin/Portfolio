@@ -3,7 +3,9 @@ import "./Skills.css";
 
 export const Skills = () => {
    return (
-      <div id="Skills" className="card__container">
+      <>
+      <div id="Skills" className="href"/>
+      <div id="" className="card__container">
          <div className="skill__container">
             <h2>
                <b>2.</b> Skills
@@ -72,5 +74,6 @@ export const Skills = () => {
             </div>
          </div>
       </div>
+      </>
    );
 };

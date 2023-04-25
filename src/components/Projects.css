@@ -6,7 +6,7 @@
 
 .slider__container{
    display: flex;
-
+   margin-top: 40px;
    /* width: 100%; */
 }
 
@@ -64,3 +64,14 @@
 }
 
 
+@media screen and (max-width: 800px){
+   .slider__container{
+      margin-top: 20px;
+      /* position: relative; */
+   }
+   .arrow{
+      display: flex;
+      /* position: absolute; */
+      /* top: ; */
+   }
+}
