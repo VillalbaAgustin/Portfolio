@@ -7,6 +7,7 @@
 .slider__container{
    display: flex;
    margin-top: 40px;
+   position: relative;
    /* width: 100%; */
 }
 
@@ -16,44 +17,77 @@
    height: 100%;
    object-fit: scale-down;
    border-radius: 10px;
+
+}
+
+.slider__container a{
+   position: absolute;
+   bottom: 0px;
 }
 
 .arrow{
    display: flex;
    align-items: center;
    justify-content: center;
+
 }
 
-.bi-caret-right-fill {
+.bi-chevron-left {
    display: flex;
-   color: #efefefc8;
-   font-size: 3rem;
    cursor: pointer;
+   color: #b9faf2;
+   font-size: 2.5rem;
+   border-radius: 50%;
 }
 
-.bi-caret-left-fill{
+.bi-chevron-right{
    display: flex;
-   color: #efefefc8;
-   font-size: 3rem;
    cursor: pointer;
+   color: #b9faf2;
+   font-size: 2.5rem;
+   border-radius: 50%;
 }
 
 .dot__container{
    display: flex;
+   position: relative;
    justify-content: center;
+   align-items: center;
    margin: auto;
    margin-top: 10px;
 }
 
+.href__page{
+   position: absolute;
+   right: 12vw;
+   font-size: 20px;
+   color: #b9faf2;
+}
+
+.href__page:hover{
+   color: #04fce3;
+}
+
+.href__git{
+   position: absolute;
+   left: 12vw;
+   font-size: 20px;
+   color: #b9faf2;
+}
+
+.href__git:hover{
+   color: #04fce3;
+}
+
 .dot {
    display: flex;
-   color: #efefefb8;
+   color: #b9faf29a;
    cursor: pointer;
 }
 
 .active__dot{
    display: flex;
-   color: #ffffff;
+   color: #04fce3;
    font-size: 40px;
    border-radius: 50%;
    cursor: pointer;
@@ -63,15 +97,27 @@
    font-size: 30px;
 }
 
+/* .bi-link{
+   left: 0px;
+} */
+
 
 @media screen and (max-width: 800px){
    .slider__container{
       margin-top: 20px;
-      /* position: relative; */
+      position: relative;
    }
-   .arrow{
-      display: flex;
-      /* position: absolute; */
-      /* top: ; */
+   .bi-chevron-left{
+      position: absolute;
+      color: #04fce3;
+      left: 1px;
+      font-size: 2rem;
+   }
+   .bi-chevron-right{
+      position: absolute;
+      color: #04fce3;
+      right: 1px;
+      font-size: 2rem;
+
    }
 }
