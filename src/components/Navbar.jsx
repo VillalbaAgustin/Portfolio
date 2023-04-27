@@ -29,7 +29,6 @@ export const Navbar = () => {
                   {navItems.map((item) => (
                      <li key={item.id} className="nav__item">
                         <a href={item.href} className="nav__link" onClick={onToggle}>
-                           {/* {`${item.id}. ${item.label}`} */}
                            <span className="nav__number">{item.id}. </span>
                            {item.label}
                         </a>

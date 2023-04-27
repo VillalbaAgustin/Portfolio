@@ -5,22 +5,8 @@
 
 
 .profile{
-   /* display: flex; */
    align-items: center;
 }
-
-
-/* .profile__container{
-   display: flex;
-   align-items: center;
-}
-
-.profile__container img{
-   display: flex;
-   width: 150px;
-   height: 150px;
-   border-radius: 50%;
-} */
 
 .profile__container{
    display: block;
