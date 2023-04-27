@@ -42,7 +42,7 @@ export const Contact = () => {
                         placeholder="Your Message"
                         className="input__form"
                         name="message"
-                        rows="10"
+                        rows="5"
                         required
                      ></textarea>
                   </div>

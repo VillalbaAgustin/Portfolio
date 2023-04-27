@@ -57,7 +57,7 @@ p{
 .containers{
    max-width: 1000px;
    padding: 0px 50px;
-   margin: 100px auto;
+   margin: 100px auto  0px auto;
 }
 
 .card__container{
@@ -73,6 +73,11 @@ p{
    height: 100px;
 }
 
+@media screen and (max-width: 700px){
+   h2{
+      width: 70%;
+   }
+}
 
 @media screen and (max-width: 600px){
    .containers{

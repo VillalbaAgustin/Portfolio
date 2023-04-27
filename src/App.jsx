@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Profile, Skills, Projects, Contact } from "./components";
+import { Navbar, Profile, Skills, Projects, Contact, Footer } from "./components";
 import "./App.css";
 
 export const App = () => {
@@ -12,6 +12,7 @@ export const App = () => {
                <Projects />
                <Contact />
          </div>
+               <Footer/>
       </div>
    );
 };
