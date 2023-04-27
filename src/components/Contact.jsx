@@ -49,6 +49,7 @@ export const Contact = () => {
                   <button type="submit" className="btn__form">
                      Submit
                   </button>
+                  <input type="hidden" name="_url" value="https://villalbaagustin.github.io/Portfolio/#Contact"></input>
                </form>
             </div>
          </div>
