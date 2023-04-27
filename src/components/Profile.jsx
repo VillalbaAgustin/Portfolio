@@ -26,8 +26,8 @@ export const Profile = () => {
             <div className="profile__container">
                <img src="./assets/profile2.jpg" alt="imgProfile" />
                <p>
-                  Hello world!, Iam a Full Stack Web Developer who is just
-                  starting out in the tech industry and I am excited to learn
+                  Hello world!, I am a Full Stack Web Developer who is just
+                  starting out in the tech industry and excited to learn
                   and grow as a professional. I'm familiar with web technologies
                   such as HTML, CSS, and JavaScript, as well as popular
                   framework such as React. Additionally, I'm constantly learning

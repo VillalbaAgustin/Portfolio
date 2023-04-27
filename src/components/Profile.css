@@ -36,7 +36,7 @@
       margin: 20px auto;
    }
    .profile__container p{
-      text-align: justify;
+      text-align: left;
       letter-spacing: normal;
       word-spacing: normal;
    }
