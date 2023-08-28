@@ -3,20 +3,6 @@ import "./Projects.css";
 
 const slides = [
   {
-    url: "./projects/CalendarAppLogin.JPG",
-    title: "CalendarApp",
-    description: "Hola Mundo",
-    href: "https://calendar-backend-production-6d29.up.railway.app",
-    hrefGit: "https://github.com/VillalbaAgustin/Calendar.git",
-  },
-  {
-    url: "./projects/GifApp.JPG",
-    title: "GifApp",
-    description: "Hola Mundo",
-    href: "https://villalbaagustin.github.io/react-gifexpertapp/",
-    hrefGit: "https://github.com/VillalbaAgustin/react-gifexpertapp.git",
-  },
-  {
     url: "./projects/JournalApp.JPG",
     title: "JournalApp",
     description: "Hola Mundo",
@@ -30,10 +16,25 @@ const slides = [
     href: "https://villalbaagustin.github.io/movie-react/",
     hrefGit: "https://github.com/VillalbaAgustin/movie-react.git",
   },
+  {
+    url: "./projects/CalendarAppLogin.JPG",
+    title: "CalendarApp",
+    description: "Hola Mundo",
+    href: "https://calendar-backend-production-6d29.up.railway.app",
+    hrefGit: "https://github.com/VillalbaAgustin/Calendar.git",
+  },
+  {
+    url: "./projects/GifApp.JPG",
+    title: "GifApp",
+    description: "Hola Mundo",
+    href: "https://villalbaagustin.github.io/react-gifexpertapp/",
+    hrefGit: "https://github.com/VillalbaAgustin/react-gifexpertapp.git",
+  },
+
 ];
 
 export const Projects = () => {
-  const [currentIndex, setCurrentIndex] = useState(3);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
