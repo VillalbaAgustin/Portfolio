@@ -30,6 +30,13 @@ const slides = [
     href: "https://villalbaagustin.github.io/react-gifexpertapp/",
     hrefGit: "https://github.com/VillalbaAgustin/react-gifexpertapp.git",
   },
+  {
+    url: "./projects/AirbnbClone.JPG",
+    title: "AirbnbClone",
+    description: "Hola Mundo",
+    href: "https://kittyacatemyorg.files.wordpress.com/2018/05/500.jpg",
+    hrefGit: "https://github.com/VillalbaAgustin/airbnb-clone",
+  },
 
 ];
 
