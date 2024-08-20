@@ -1,50 +1,6 @@
 import React, { useState } from "react";
 import "./Projects.css";
-
-const slides = [
-  {
-    url: "./projects/JournalApp.JPG",
-    title: "JournalApp",
-    description: "Journal",
-    href: "https://journal-app-neon-eight.vercel.app/auth/login",
-    hrefGit: "https://github.com/VillalbaAgustin/JournalApp.git",
-  },
-  {
-    url: "./projects/MovieApp.JPG",
-    title: "MovieApp",
-    description: "Movie",
-    href: "https://villalbaagustin.github.io/movie-react/",
-    hrefGit: "https://github.com/VillalbaAgustin/movie-react.git",
-  },
-  {
-    url: "./projects/CalendarAppLogin.JPG",
-    title: "CalendarApp",
-    description: "Calendar",
-    href: "https://calendar-backend-production-6d29.up.railway.app",
-    hrefGit: "https://github.com/VillalbaAgustin/Calendar.git",
-  },
-  {
-    url: "./projects/Tic-Tac-Toe.PNG",
-    title: "Tic-Tac-Toe",
-    description: "Tic-Tac-Toe",
-    href: "https://villalbaagustin.github.io/Tic-Tac-Toe/",
-    hrefGit: "https://github.com/VillalbaAgustin/Tic-Tac-Toe",
-  },
-  {
-    url: "./projects/GifApp.JPG",
-    title: "GifApp",
-    description: "Gif",
-    href: "https://villalbaagustin.github.io/react-gifexpertapp/",
-    hrefGit: "https://github.com/VillalbaAgustin/react-gifexpertapp.git",
-  },
-  {
-    url: "./projects/AirbnbClone.JPG",
-    title: "AirbnbClone",
-    description: "airbnbclone",
-    href: "https://kittyacatemyorg.files.wordpress.com/2018/05/500.jpg",
-    hrefGit: "https://github.com/VillalbaAgustin/airbnb-clone",
-  },
-];
+import { slides } from "../../data/const";
 
 export const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

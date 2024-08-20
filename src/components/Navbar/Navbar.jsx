@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
-import { getTopNav } from "../../data/navbar";
+import { getTopNav } from "../../data/const";
 
 export const Navbar = () => {
   const [navItems, setNavItems] = useState([]);

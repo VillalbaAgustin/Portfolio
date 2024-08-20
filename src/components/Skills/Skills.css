@@ -61,9 +61,11 @@
     height: 80px;
     width: 80px;
   }
-
   .logo img {
     height: 65px;
     width: 65px;
+  }
+  .link{
+    font-size: 14px;
   }
 }

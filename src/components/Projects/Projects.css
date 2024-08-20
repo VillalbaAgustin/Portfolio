@@ -54,7 +54,7 @@
 
 .href__page {
   position: absolute;
-  right: 12vw;
+  right: 5vw;
   font-size: 20px;
   color: #b9faf2;
 }
@@ -65,7 +65,7 @@
 
 .href__git {
   position: absolute;
-  left: 12vw;
+  left: 5vw;
   font-size: 20px;
   color: #b9faf2;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Skills.css";
-import { skills } from "../../data/navbar";
+import { skills } from "../../data/const";
 
 export const Skills = () => {
   return (
