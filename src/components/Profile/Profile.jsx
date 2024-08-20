@@ -22,14 +22,14 @@ export const Profile = () => {
           <b> 1.</b> Profile
         </h2>
         <div className="profile__container">
-          <img src="./assets/profile2.jpg" alt="imgProfile" />
+          <img src="../assets/profile2.jpg" alt="imgProfile" />
           <p>
-            Hello world!, I am a Full Stack Web Developer who is just starting
+            Hello world!, I'm Villalba Agustin I am a Full Stack Web Developer who is just starting
             out in the tech industry and excited to learn and grow as a
             professional. I'm familiar with web technologies such as HTML, CSS,
             and JavaScript, as well as popular framework such as React.
             Additionally, I'm constantly learning new skills and tools to
-            improve my knowledge in web application development. I consider
+            enhance my knowledge in web application development. I consider
             myself an enthusiastic and focused worker who is ready to take on
             any challenge that comes my way.
           </p>

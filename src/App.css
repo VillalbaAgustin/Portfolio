@@ -3,95 +3,90 @@
 *,
 ::before,
 ::after {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-   font-family: "Poppins", sans-serif;
-   background-color: #0F2027;
-   /* background-color: #0a192f; */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0f2027;
+  /* background-color: #0a192f; */
 }
 
 a {
-   text-decoration: none;
+  text-decoration: none;
 }
-
 
 li {
-   list-style: none;
+  list-style: none;
 }
 
-
-
-
-h2{
-   display: block;
-   width: 50%;
-   right: 50%;
-   text-align: center;
-   margin: 0 auto;
-   font-weight: 525;
-   color: #b9faf2;
-   /* text-decoration: underline solid #04fce3; */
-   border-bottom: solid 1.5px #04fce3;
-   /* margin-bottom: 15px; */
-   cursor: context-menu;
+h2 {
+  display: block;
+  width: 50%;
+  right: 50%;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 525;
+  color: #b9faf2;
+  /* text-decoration: underline solid #04fce3; */
+  border-bottom: solid 1.5px #04fce3;
+  /* margin-bottom: 15px; */
+  cursor: context-menu;
 }
 
-h2 b{
-   color: #04fce3;
-   font-size: 1.3rem;
-   font-weight: 525;
-   cursor: context-menu;
+h2 b {
+  color: #04fce3;
+  font-size: 1.3rem;
+  font-weight: 525;
+  cursor: context-menu;
 }
 
-p{
-   color: #b9faf2;
-   margin: 0px;
-   cursor: context-menu;
+p {
+  color: #b9faf2;
+  margin: 0px;
+  cursor: context-menu;
 }
 
-
-.containers{
-   max-width: 1000px;
-   padding: 0px 50px;
-   margin: 100px auto  0px auto;
+.containers {
+  max-width: 1000px;
+  padding: 0px 50px;
+  margin: 100px auto 0px auto;
 }
 
-.card__container{
-   /* max-width: 960px; */
-   background-color: #30343823;
-   padding: 75px;
-   /* margin: 50px 0px; */
-   border-radius: 10px;
-   border: solid #2c536420 5px;
+.card__container {
+  /* max-width: 960px; */
+  background-color: #30343823;
+  padding: 75px;
+  /* margin: 50px 0px; */
+  border-radius: 10px;
+  border: solid #2c536420 5px;
 }
 
-.href{
-   height: 100px;
+.href {
+  height: 100px;
 }
 
-@media screen and (max-width: 700px){
-   h2{
-      width: 70%;
-   }
+@media screen and (max-width: 700px) {
+  h2 {
+    width: 70%;
+  }
 }
 
-@media screen and (max-width: 600px){
-   .containers{
-      margin: 0px 0px;
-      padding: 50px 15px 0px 15px;
-   }
-   .card__container{
-      margin: 0px 0px 50px 0px;
-      padding: 35px 15px;
-   }
-   h2{
-      width: 70%;
-   }
-   .href{
-      height: 35px;
-   }
+@media screen and (max-width: 600px) {
+  .containers {
+    margin: 0px 0px;
+    padding: 50px 15px 0px 15px;
+  }
+  .card__container {
+    margin: 0px 0px 50px 0px;
+    padding: 35px 15px;
+  }
+  h2 {
+    width: 70%;
+  }
+  .href {
+    height: 35px;
+  }
 }
