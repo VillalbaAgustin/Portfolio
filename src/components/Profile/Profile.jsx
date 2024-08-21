@@ -22,7 +22,7 @@ export const Profile = () => {
           <b> 1.</b> Profile
         </h2>
         <div className="profile__container">
-          <img src="../img/Profile.jpg" alt="imgProfile" />
+          <img src="./img/Profile.jpg" alt="imgProfile" />
           <p>
             Hello world!, I'm Villalba Agustin I am a Full Stack Web Developer who is just starting
             out in the tech industry and excited to learn and grow as a
