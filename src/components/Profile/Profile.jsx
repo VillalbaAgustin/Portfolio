@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import  {ProfileImg}  from "../../assets/img/index";
 import "animate.css";
 
 import "./Profile.css";
@@ -23,7 +22,7 @@ export const Profile = () => {
           <b> 1.</b> Profile
         </h2>
         <div className="profile__container">
-          <img src={ProfileImg} alt="imgProfile" />
+          <img src="../img/Profile.jpg" alt="imgProfile" />
           <p>
             Hello world!, I'm Villalba Agustin I am a Full Stack Web Developer who is just starting
             out in the tech industry and excited to learn and grow as a
