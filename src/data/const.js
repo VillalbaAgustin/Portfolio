@@ -36,13 +36,13 @@ export const skills = [
   },
   {
     name: "Next.js",
-    image: "./skills/Next.png",
+    image: "./skills/Nextjs.png",
     alt: "Nextjs",
     link: "https://nextjs.org/",
   },
   {
     name: "Node.js",
-    image: "./skills/Node.png",
+    image: "./skills/Nodejs.png",
     alt: "Nodejs",
     link: "https://nodejs.org/en",
   },
@@ -66,7 +66,7 @@ export const skills = [
   },
   {
     name: "UX/UI",
-    image: "./skills/Responsive.png",
+    image: "./skills/Responsive.jpg",
     alt: "Responsive",
     link: "",
   },
@@ -118,7 +118,7 @@ export const slides = [
     hrefGit: "https://github.com/VillalbaAgustin/movie-react.git",
   },
   {
-    url: "./projects/CalendarApp.jpg",
+    url: "./projects/CalendarAppLogin.jpg",
     title: "CalendarApp",
     description: "Calendar",
     href: "https://calendar-backend-production-6d29.up.railway.app",
