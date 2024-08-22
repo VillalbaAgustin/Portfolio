@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import "./Projects.css";
 import { slides } from "../../data/const";
+import { useLanguage } from "../../hooks/useLanguage";
+import { TranslateContext } from "../../context/language";
 
 export const Projects = () => {
+  const {language, setLanguage} = useLanguage(TranslateContext)
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrevious = () => {
@@ -26,9 +29,15 @@ export const Projects = () => {
       <div id="Projects" className="href" />
       <div id="" className="card__container ">
         <div className="projects__container">
+        {language === "en" ? (
           <h2>
-            <b>3.</b> Projects
+            <b> 3.</b> Projects
           </h2>
+        ) : (
+          <h2>
+            <b> 3.</b> Projectos
+          </h2>
+        )}
           <div className="slider__container">
             <div className="arrow">
               <i className="bi bi-chevron-left" onClick={goToPrevious}></i>

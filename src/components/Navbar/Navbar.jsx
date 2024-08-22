@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { getTopNav } from "../../data/const";
+import { TranslateContext } from "../../context/language";
+import { useLanguage } from "../../hooks/useLanguage";
 
 export const Navbar = () => {
+  const { language, setLanguage } = useLanguage(TranslateContext);
+
   const [navItems, setNavItems] = useState([]);
   const [collapse, setCollapse] = useState("nav__menu nav__hidden");
   const [toggleIcon, setToggleIcon] = useState("toggler__icon");
@@ -10,6 +14,11 @@ export const Navbar = () => {
   useEffect(() => {
     setNavItems(getTopNav());
   }, []);
+
+  const handleChangeLanguage = () => {
+    language === "es" ? setLanguage("en") : setLanguage("es");
+    onToggle();
+  };
 
   const onToggle = () => {
     collapse === "nav__menu nav__hidden"
@@ -30,13 +39,19 @@ export const Navbar = () => {
               <li key={item.id} className="nav__item">
                 <a href={item.href} className="nav__link" onClick={onToggle}>
                   <span className="nav__number">{item.id}. </span>
-                  {item.label}
+                  {language === "en" ? item.label : item.etiqueta}
                 </a>
               </li>
             ))}
+          <button
+            className={language === "en" ? "nav__link" : "nav__link selected"}
+            onClick={handleChangeLanguage}
+          >
+            <i className="bi bi-translate"></i>
+          </button>
           </ul>
-          <div className="container__toggle">
-            <div className={toggleIcon} onClick={onToggle}>
+          <div className="container__toggle" onClick={onToggle}>
+            <div className={toggleIcon}>
               <div className="line__1"></div>
               <div className="line__2"></div>
               <div className="line__3"></div>

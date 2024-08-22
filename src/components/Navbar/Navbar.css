@@ -30,16 +30,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 1rem;
   padding-left: 0px;
   margin: 0px;
-}
+  }
 
 .nav__item {
   display: inline-block;
   list-style: none;
   position: relative;
-}
+  width: 160px;
+  }
 
 .nav__item::before {
   content: "";
@@ -97,7 +98,7 @@
   transition: 0.3s ease;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .nav__wrapper {
     position: fixed;
     width: 100%;
@@ -142,6 +143,17 @@
 
 .nav__collapse {
   transform: translateX(0%);
+}
+
+.nav button{
+  display: flex;
+  border: none;
+  background-color: transparent;
+  width: auto;
+}
+
+.selected{
+  color: #04fce3;
 }
 
 /* Toggle Icon Animation */

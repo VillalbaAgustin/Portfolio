@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import {
   Navbar,
   Profile,
@@ -8,8 +8,14 @@ import {
   Footer,
 } from "./components";
 import "./App.css";
+import { TranslateContext } from "./context/language";
 
 export const App = () => {
+  const {language, setLanguage} = useContext(TranslateContext)
+  useEffect(() => {
+
+  }, [language])
+  
   return (
     <div>
       <Navbar />

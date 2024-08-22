@@ -1,15 +1,24 @@
 import React from "react";
 import "./Contact.css";
+import { useLanguage } from "../../hooks/useLanguage";
+import { TranslateContext } from "../../context/language";
 
 export const Contact = () => {
+  const {language, setLanguage} = useLanguage(TranslateContext)
   return (
     <>
       <div id="Contact" className="href" />
       <div id="" className="card__container">
         <div className="">
+        {language === "en" ? (
           <h2>
-            <b>4.</b> Get in touch
+          <b>4.</b> Get in touch
+        </h2>
+        ) : (
+          <h2>
+            <b> 4.</b> Contacto
           </h2>
+        )}
           <form
             target="_blank"
             action="https://formsubmit.co/villalba.4gustin@gmail.com"

@@ -1,8 +1,8 @@
 const topNav = [
-  { id: "1", label: "Profile", href: "/Portfolio/#" },
-  { id: "2", label: "Skills", href: "/Portfolio/#Skills" },
-  { id: "3", label: "Projects", href: "/Portfolio/#Projects" },
-  { id: "4", label: "Contact", href: "/Portfolio/#Contact" },
+  { id: "1", label: "Profile", etiqueta: "Perfil", href: "/Portfolio/#" },
+  { id: "2", label: "Skills", etiqueta: "Habilidades", href: "/Portfolio/#Skills" },
+  { id: "3", label: "Projects", etiqueta: "Proyectos", href: "/Portfolio/#Projects" },
+  { id: "4", label: "Contact", etiqueta: "Contacto", href: "/Portfolio/#Contact" },
 ];
 
 export const getTopNav = () => {
