@@ -34,27 +34,29 @@ export const Profile = () => {
           <img src="./img/Profile.jpg" alt="imgProfile" />
           {language === "en" ? (
             <p>
-              Hello world!, I'm Villalba Agustin I am a Full Stack Web Developer
-              who is just starting out in the tech industry and excited to learn
-              and grow as a professional. I'm familiar with web technologies
-              such as HTML, CSS, and JavaScript, as well as popular framework
-              such as React. Additionally, I'm constantly learning new skills
-              and tools to enhance my knowledge in web application development.
-              I consider myself an enthusiastic and focused worker who is ready
-              to take on any challenge that comes my way.
+              I am a Junior Full Stack Web Developer excited to learn and grow
+              as a professional. I am familiar with web technologies such as
+              HTML, CSS and JavaScript, as well as popular frameworks such as
+              React on the Frontend, on the Backend side knowledge with the
+              Node.Js execution environment, NoSQL database (MongoDB and
+              Firebase) and SQL (PostgreSQL). Additionally, I am constantly
+              learning new skills and tools to improve my knowledge in web
+              application development. I consider myself an enthusiastic and
+              focused worker who is ready to take up any challenge that comes my
+              way.
             </p>
           ) : (
             <p>
-              ¡Hola mundo! Soy
-              Villalba Agustín, un Desarrollador Web Full Stack que recién
-              comienza en la industria tecnológica y está emocionado por
+              Soy un desarrollador web Full Stack Junior, estoy emocionado de
               aprender y crecer como profesional. Estoy familiarizado con
-              tecnologías web como HTML, CSS y JavaScript, así como con marcos
-              populares como React. Además, estoy constantemente aprendiendo
-              nuevas habilidades y herramientas para mejorar mis conocimientos
-              en el desarrollo de aplicaciones web. Me considero un trabajador
-              entusiasta y enfocado, listo para asumir cualquier desafío que se
-              presente en mi camino.
+              tecnologías web como HTML, CSS y JavaScript, así como frameworks
+              populares como React en Frontend, del lado del Backend
+              conocimientos con el entorno de ejecución Node.Js, base de datos
+              NoSQL (MongoDB y Firebase) y SQL (PostgreSQL). Además, estoy
+              constantemente aprendiendo nuevas habilidades y herramientas para
+              mejorar mis conocimientos en el desarrollo de aplicaciones web. Me
+              considero un trabajador entusiasta y enfocado que está listo para
+              asumir cualquier desafío que se presente en mi camino.
             </p>
           )}
         </div>

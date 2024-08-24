@@ -1,3 +1,6 @@
+@import '../../variables.css';
+
+
 .projects__container {
   display: block;
 }
@@ -30,7 +33,7 @@
 .bi-chevron-left {
   display: flex;
   cursor: pointer;
-  color: #b9faf2;
+  color: var(--primary-color);
   font-size: 2.5rem;
   border-radius: 50%;
 }
@@ -38,7 +41,7 @@
 .bi-chevron-right {
   display: flex;
   cursor: pointer;
-  color: #b9faf2;
+  color: var(--primary-color);
   font-size: 2.5rem;
   border-radius: 50%;
 }
@@ -56,33 +59,33 @@
   position: absolute;
   right: 5vw;
   font-size: 20px;
-  color: #b9faf2;
+  color: var(--primary-color);
 }
 
 .href__page:hover {
-  color: #04fce3;
+  color: var(--secondary-color);
 }
 
 .href__git {
   position: absolute;
   left: 5vw;
   font-size: 20px;
-  color: #b9faf2;
+  color: var(--primary-color);
 }
 
 .href__git:hover {
-  color: #04fce3;
+  color: var(--secondary-color);
 }
 
 .dot {
   display: flex;
-  color: #b9faf29a;
+  color: var(--primary-color)9a;
   cursor: pointer;
 }
 
 .active__dot {
   display: flex;
-  color: #04fce3;
+  color: var(--secondary-color);
   font-size: 40px;
   border-radius: 50%;
   cursor: pointer;
@@ -99,13 +102,13 @@
   }
   .bi-chevron-left {
     position: absolute;
-    color: #04fce3;
+    color: var(--secondary-color);
     left: 1px;
     font-size: 2rem;
   }
   .bi-chevron-right {
     position: absolute;
-    color: #04fce3;
+    color: var(--secondary-color);
     right: 1px;
     font-size: 2rem;
   }

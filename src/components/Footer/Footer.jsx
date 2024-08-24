@@ -1,10 +1,21 @@
 import React from "react";
 import "./Footer.css";
+import { useLanguage } from "../../hooks/useLanguage";
+import { TranslateContext } from "../../context/language";
 
 export const Footer = () => {
+  const {language, setLanguage} = useLanguage(TranslateContext)
+
   return (
     <div className="footer__container">
-      <span>Designed & Built by Villalba Agustín</span>
+      {
+        language === "en" ? 
+
+        <span>Designed & Built by Villalba Agustín</span>
+        :
+        <span>Diseñada & Construida por Villalba Agustín</span>
+
+      }
       <div className="redes__container">
         <a
           target="_blank"

@@ -35,6 +35,12 @@ export const Navbar = () => {
       <div className="nav__container">
         <nav className="nav">
           <ul className={collapse}>
+        <button
+            className={language === "en" ? "nav__link" : "nav__link selected"}
+            onClick={handleChangeLanguage}
+          >
+            <i class="bi bi-sun-fill"></i>
+          </button>
             {navItems.map((item) => (
               <li key={item.id} className="nav__item">
                 <a href={item.href} className="nav__link" onClick={onToggle}>

@@ -1,3 +1,5 @@
+@import '../../variables.css';
+
 .nav__container {
   max-width: 960px;
   margin-left: auto;
@@ -13,7 +15,7 @@
 
 .nav__wrapper {
   position: fixed;
-  background: rgba(19, 38, 47, 255);
+  background: var(--background-color);
   width: 100%;
   top: 0;
   z-index: 1;
@@ -36,7 +38,9 @@
   }
 
 .nav__item {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   position: relative;
   width: 160px;
@@ -50,7 +54,7 @@
   bottom: 0;
   width: 100%;
   height: 2px;
-  background: #04fce3;
+  background: var(--secondary-color);
   border: 4px;
   scale: 0;
   transform-origin: left;
@@ -62,21 +66,21 @@
 }
 
 .nav__link {
-  color: #b9faf2;
+  color: var(--primary-color);
   justify-content: center;
-  padding: 10px;
+  padding: 5px;
   transition: color 1s ease;
   font-size: 18px;
   font-weight: 525;
 }
 
 .nav__link:hover {
-  color: #04fce3;
+  color: var(--secondary-color);
 }
 
 .nav__number {
   font-size: 16px;
-  color: #04fce3;
+  color: var(--secondary-color);
 }
 
 .container__toggle {
@@ -93,7 +97,7 @@
 .toggler__icon div {
   width: 25px;
   height: 2px;
-  background: #04fce3;
+  background: var(--secondary-color);
   margin: 5px 0px;
   transition: 0.3s ease;
 }
@@ -123,7 +127,7 @@
     right: 0;
     transform: translateX(100%);
     transition: 0.5s ease;
-    gap: 5rem;
+    gap: 3rem;
   }
   .nav__hidden {
     display: none;
@@ -134,9 +138,9 @@
   .nav__link {
     font-size: 23px;
     transition: color 1s, font-size 1s;
-  }
+      }
   .nav__link:hover {
-    color: #04fce3;
+    color: var(--secondary-color);
     font-size: 26px;
   }
 }
@@ -153,7 +157,7 @@
 }
 
 .selected{
-  color: #04fce3;
+  color: var(--secondary-color);
 }
 
 /* Toggle Icon Animation */

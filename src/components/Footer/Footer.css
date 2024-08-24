@@ -1,3 +1,5 @@
+@import '../../variables.css';
+
 .footer__container {
   display: flex;
   justify-content: space-evenly;
@@ -17,20 +19,20 @@
   display: flex;
   font-size: 20px;
   margin: 5px;
-  color: #b9faf2;
+  color: var(--primary-color);
 }
 
 .footer__container span {
   font-weight: 200;
-  color: #b9faf2;
+  color: var(--primary-color);
 }
 
 .redes__container a:hover {
-  color: #04fce3;
+  color: var(--secondary-color);
 }
 
 .footer__container span:hover {
-  color: #04fce3;
+  color: var(--secondary-color);
 }
 
 @media screen and (max-width: 600px) {
