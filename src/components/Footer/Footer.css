@@ -6,7 +6,7 @@
   align-items: center;
   height: 9vh;
   margin-top: 40px;
-  background-color: rgba(19, 38, 47, 255);
+  background-color: var(--background-color);
 }
 
 .redes__container {

@@ -2,5 +2,32 @@
   --primary-color: #b9faf2;
   --secondary-color: #04fce3;
   --background-color: rgba(19, 38, 47, 255);
+  --background-color-body: #0f2027;
+  --overlay: #04fce3db;
+
+  --nav-link-collapse-color: #b9faf2;
+  --nav-number-collapse-color: #04fce3;
   /* --font-size: 16px; */
 }
+
+[data-theme = "light"] {
+  --primary-color: #0f2027;
+  --secondary-color: #0f20277c;
+  --background-color: #95ccc8;
+  --background-color-body: #b9faf2;
+  --overlay: #0f2027e5;
+
+  --nav-link-collapse-color: #b9faf2;
+  --nav-number-collapse-color: #95ccc8;
+}
+
+/* [data-theme = "light"] {
+  --primary-color: #0f2027;
+  --secondary-color: #0f20277c;
+  --background-color: #0dcdbd;
+  --background-color-body: #04fce3;
+  --overlay: #0f2027e5;
+
+  --nav-link-collapse-color: #04fce3;
+  --nav-number-collapse-color: #0dcdbdda;
+} */

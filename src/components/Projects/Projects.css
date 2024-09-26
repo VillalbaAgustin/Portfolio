@@ -79,7 +79,7 @@
 
 .dot {
   display: flex;
-  color: var(--primary-color)9a;
+  color: var(--primary-color);
   cursor: pointer;
 }
 

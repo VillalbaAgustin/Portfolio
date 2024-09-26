@@ -1,3 +1,5 @@
+@import '../../variables.css';
+
 .form-group {
   margin-top: 40px;
 }
@@ -34,10 +36,14 @@
   color: var(--primary-color);
   text-align: center;
   text-decoration: none;
-  transition: all 0.5s ease;
+  transition: all 0.65s ease;
 }
 
 .btn__form:hover {
-  background-color: #b9faf2;
-  color: #212529;
+  background-color: var(--primary-color);
+  color: var(--background-color-body);
 }
+
+
+background-color: #b9faf2;
+color: #212529;

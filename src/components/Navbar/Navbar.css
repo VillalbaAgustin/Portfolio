@@ -97,7 +97,7 @@
 .toggler__icon div {
   width: 25px;
   height: 2px;
-  background: var(--secondary-color);
+  background: var(--nav-number-collapse-color);
   margin: 5px 0px;
   transition: 0.3s ease;
 }
@@ -137,11 +137,16 @@
   }
   .nav__link {
     font-size: 23px;
-    transition: color 1s, font-size 1s;
-      }
+    transition: color 0.5s, font-size 1s;
+    color: var(--nav-link-collapse-color);
+  }
+
   .nav__link:hover {
-    color: var(--secondary-color);
-    font-size: 26px;
+    color: var(--nav-number-collapse-color);
+  }
+
+  .nav__number{
+    color: var(--nav-number-collapse-color);
   }
 }
 
@@ -157,7 +162,7 @@
 }
 
 .selected{
-  color: var(--secondary-color);
+  color: var(--nav-number-collapse-color);
 }
 
 /* Toggle Icon Animation */

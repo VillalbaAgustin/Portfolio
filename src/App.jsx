@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useEffect } from "react";
 import {
   Navbar,
   Profile,
@@ -8,18 +8,19 @@ import {
   Footer,
 } from "./components";
 import "./App.css";
-import { TranslateContext } from "./context/language";
+// import { TranslateContext } from "./context/language";
+import { useLanguage, useTheme } from "./hooks/useLanguage";
 
 export const App = () => {
-  const {language, setLanguage} = useContext(TranslateContext)
-  useEffect(() => {
+  const { language, setLanguage } = useLanguage();
+  const { theme, setTheme } = useTheme();
+  useEffect(() => {}, [language, theme]);
+  console.log(theme);
 
-  }, [language])
-  
   return (
-    <div>
+    <div className="app" data-theme = {theme} >
       <Navbar />
-      <div className="containers">
+      <div className="containers" data-theme = {theme}>
         <Profile />
         <Skills />
         <Projects />
