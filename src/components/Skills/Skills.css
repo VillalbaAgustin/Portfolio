@@ -12,7 +12,7 @@
   position: relative;
   height: 110px;
   width: 110px;
-  background: #b9faf217;
+  background: var(--logo-background);
   border-radius: 8px;
   margin: 5px;
   justify-content: center;

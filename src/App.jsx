@@ -15,12 +15,11 @@ export const App = () => {
   const { language, setLanguage } = useLanguage();
   const { theme, setTheme } = useTheme();
   useEffect(() => {}, [language, theme]);
-  console.log(theme);
 
   return (
     <div className="app" data-theme = {theme} >
       <Navbar />
-      <div className="containers" data-theme = {theme}>
+      <div className="containers">
         <Profile />
         <Skills />
         <Projects />

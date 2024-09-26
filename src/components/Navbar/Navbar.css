@@ -162,7 +162,7 @@
 }
 
 .selected{
-  color: var(--nav-number-collapse-color);
+  color: var(--secondary-color);
 }
 
 /* Toggle Icon Animation */
