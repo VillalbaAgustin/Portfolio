@@ -161,10 +161,6 @@
   width: auto;
 }
 
-.selected{
-  color: var(--secondary-color);
-}
-
 /* Toggle Icon Animation */
 .toggle .line__1 {
   transform: translate(-5px, 7px) rotate(-45deg);

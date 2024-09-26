@@ -61,7 +61,7 @@ export const Navbar = () => {
                   </li>
                 ))}
                 <button
-                  className={language === "en" ? "nav__link" : "nav__link selected"}
+                  className="nav__link"
                   onClick={handleChangeLanguage}
                 >
                   <i className="bi bi-translate"></i>
