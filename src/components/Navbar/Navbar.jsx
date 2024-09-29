@@ -13,6 +13,7 @@ export const Navbar = () => {
   const [collapse, setCollapse] = useState("nav__menu nav__hidden");
   const [toggleIcon, setToggleIcon] = useState("toggler__icon");
 
+
   useEffect(() => {
     setNavItems(getTopNav());
   }, []);
@@ -38,45 +39,40 @@ export const Navbar = () => {
   };
 
   return (
-        <header className="nav__wrapper">
-          <div className="nav__container">
-            <nav className="nav">
-              <ul className={collapse}>
-                <button
-                  className="nav__link"
-                  onClick={handleChangeTheme}
-                >
-                  {theme === "dark" ? (
-                    <i class="bi bi-sun"></i>
-                  ) : (
-                    <i class="bi bi-moon-fill"></i>
-                  )}
-                </button>
-                {navItems.map((item) => (
-                  <li key={item.id} className="nav__item">
-                    <a href={item.href} className="nav__link" onClick={onToggle}>
-                      <span className="nav__number">{item.id}. </span>
-                      {language === "en" ? item.label : item.etiqueta}
-                    </a>
-                  </li>
-                ))}
-                <button
-                  className="nav__link"
-                  onClick={handleChangeLanguage}
-                >
-                  <i className="bi bi-translate"></i>
-                </button>
-              </ul>
-              <div className="container__toggle" onClick={onToggle}>
-                <div className={toggleIcon}>
-                  <div className="line__1"></div>
-                  <div className="line__2"></div>
-                  <div className="line__3"></div>
-                </div>
-              </div>
-            </nav>
+    <header className="nav__wrapper">
+      <div className="nav__container">
+        <nav className="nav">
+          <ul className={collapse}>
+            <button className="nav__link" onClick={handleChangeTheme}>
+              {theme === "dark" ? (
+                <i class="bi bi-sun"></i>
+              ) : (
+                <i class="bi bi-moon-fill"></i>
+              )}
+            </button>
+            {navItems.map((item) => (
+              <li key={item.id} className="nav__item">
+                <a href={item.href} className="nav__link" onClick={onToggle}>
+                  <span className="nav__number">{item.id}. </span>
+                  {language === "en" ? item.label : item.etiqueta}
+                </a>
+              </li>
+            ))}
+            <button className="nav__link" onClick={handleChangeLanguage}>
+              <i className="bi bi-translate"></i>
+            </button>
+          </ul>
+          <div className="container__toggle" onClick={onToggle}>
+            <div
+              className={toggleIcon}
+            >
+              <div className="line__1" style={{...(theme === 'light' && toggleIcon === 'toggler__icon toggle' && { background : '#f7edd8'})}}></div>
+              <div className="line__2"></div>
+              <div className="line__3"style={{...(theme === 'light' && toggleIcon === 'toggler__icon toggle' && { background : '#f7edd8'})}}></div>
+            </div>
           </div>
-        </header> 
+        </nav>
+      </div>
+    </header>
   );
 };
-

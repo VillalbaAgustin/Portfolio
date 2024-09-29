@@ -11,13 +11,13 @@
 }
 
 [data-theme = "light"] {
-  --primary-color: #0f2027;
-  --secondary-color: #0f20277c;
-  --background-color: #95ccc8;
-  --background-color-body: #b9faf2;
-  --overlay: #0f2027e5;
+  --primary-color: #4d3501;
+  --secondary-color: #4d35018e;
+  --background-color: #f7edd8;
+  --background-color-body: #fef6e4;
+  --overlay: #4d3501c2;
 
   --logo-background:#0f202736;
-  --nav-link-collapse-color: #b9faf2;
-  --nav-number-collapse-color: #95ccc8;
+  --nav-link-collapse-color: #f7edd8;
+  --nav-number-collapse-color: #fef6e4;
 }

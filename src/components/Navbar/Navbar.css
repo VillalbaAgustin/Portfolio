@@ -97,7 +97,7 @@
 .toggler__icon div {
   width: 25px;
   height: 2px;
-  background: var(--nav-number-collapse-color);
+  background: var(--secondary-color);
   margin: 5px 0px;
   transition: 0.3s ease;
 }
